@@ -4,168 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: #f5f5f5;
-        }
-
-        /* Navbar */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 20px;
-            background: #eee;
-            border-bottom: 1px solid #ccc;
-        }
-
-        nav a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: black;
-        }
-
-        /* Hero */
-        .hero {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            border-bottom: 2px solid #aaa;
-        }
-
-        .hero-text {
-            width: 60%;
-        }
-
-        .hero-img {
-            width: 35%;
-            height: 200px;
-            background: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-size: 24px;
-        }
-
-        /* About */
-        .about {
-            text-align: center;
-            padding: 20px;
-            border-bottom: 2px solid #aaa;
-        }
-
-        .about-box {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .box {
-            background: #ddd;
-            padding: 15px;
-        }
-
-        /* Portfolio */
-        .portfolio {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .card {
-            background: white;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-
-        .img-placeholder {
-            height: 120px;
-            background: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-        }
-    </style>
+    <title>Profil Website Tanpa CSS</title>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <div>Brand</div>
-        <div>
-            <a href="#">Header</a>
-            <a href="#">Biodata</a>
-            <a href="#">Portfolio</a>
-        </div>
-    </nav>
+    <table width="100%" border="0" cellpadding="10" cellspacing="0" bgcolor="#eeeeee">
+        <tr>
+            <td align="left">Brand</td>
+            <td align="right">
+                <a href="#">Header</a> &nbsp;&nbsp;&nbsp;
+                <a href="#">Biodata</a> &nbsp;&nbsp;&nbsp;
+                <a href="#">Portofolio</a>
+            </td>
+        </tr>
+    </table>
+
+    <hr size="1" color="#cccccc">
 
     <!-- Hero -->
-    <section class="hero">
-        <div class="hero-text">
-            <h2>Selamat Datang di Website Saya</h2>
-            <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
-            <br>
-            <a href="#">Pelajari Lebih Lanjut</a>
-        </div>
-        <img class="hero-img" src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pemain Sepak Bola" style="object-fit: cover; padding: 0;">
-    </section>
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td width="50%" valign="top">
+                <h2>Selamat Datang di Website Saya</h2>
+                <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+                <br>
+                <form action="#">
+                    <button type="submit">Pelajari Lebih Lanjut</button>
+                </form>
+            </td>
+            <td width="50%" align="center" valign="middle" bgcolor="#dddddd" height="400">
+                <font size="7" color="#777777">600 &times; 400</font>
+            </td>
+        </tr>
+    </table>
 
-    <!-- About -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>A brief introduction about myself</p>
+    <hr size="1" color="#cccccc">
 
-        <div class="about-box">
-            <div class="box">Full Name</div>
-            <div class="box">Education</div>
-            <div class="box">Pekerjaan</div>
-            <div class="box">Contact</div>
-            <div class="box">Hobi</div>
-            <div class="box">Alamat</div>
-        </div>
-    </section>
+    <!-- About Me -->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h2>About Me</h2>
+                <p>
+                    <font color="#777777">A brief introduction about myself</font>
+                </p>
+                <br>
+                <table width="100%" border="0" cellpadding="15" cellspacing="10">
+                    <tr bgcolor="#eeeeee" align="center">
+                        <td width="33%">Full Name</td>
+                        <td width="33%">Education</td>
+                        <td width="33%">Pekerjaan</td>
+                    </tr>
+                    <tr bgcolor="#eeeeee" align="center">
+                        <td>Contact</td>
+                        <td>Hobi</td>
+                        <td>Alamat</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
-    <!-- Portfolio -->
-    <section class="portfolio">
-        <h2>Portfolio</h2>
+    <hr size="1" color="#cccccc">
 
-        <div class="portfolio-grid">
-            <div class="card">
-                <div class="img-placeholder">350 x 200</div>
-                <h4>Proyek 1</h4>
-                <p>Deskripsi proyek 1.</p>
-            </div>
-
-            <div class="card">
-                <div class="img-placeholder">350 x 200</div>
-                <h4>Proyek 2</h4>
-                <p>Deskripsi proyek 2.</p>
-            </div>
-
-            <div class="card">
-                <div class="img-placeholder">350 x 200</div>
-                <h4>Proyek 3</h4>
-                <p>Deskripsi proyek 3.</p>
-            </div>
-        </div>
-    </section>
+    <!-- Portofolio -->
+    <table width="100%" border="0" cellpadding="20" cellspacing="0">
+        <tr>
+            <td align="center">
+                <h2>Portofolio</h2>
+                <br>
+                <table width="100%" border="0" cellpadding="0" cellspacing="15">
+                    <tr>
+                        <!-- Card 1 -->
+                        <td width="33%" align="center" valign="top">
+                            <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="middle" bgcolor="#dddddd" height="200">
+                                                    <font size="5" color="#777777">350 x 200</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <strong>Proyek 1</strong><br>
+                                                    <font size="2">Deskripsi proyek 1.</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!-- Card 2 -->
+                        <td width="33%" align="center" valign="top">
+                            <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="middle" bgcolor="#dddddd" height="200">
+                                                    <font size="5" color="#777777">350 x 200</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <strong>Proyek 2</strong><br>
+                                                    <font size="2">Deskripsi proyek 2.</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <!-- Card 3 -->
+                        <td width="33%" align="center" valign="top">
+                            <table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#cccccc">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                                            <tr>
+                                                <td align="center" valign="middle" bgcolor="#dddddd" height="200">
+                                                    <font size="5" color="#777777">350 x 200</font>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    <strong>Proyek 3</strong><br>
+                                                    <font size="2">Deskripsi proyek 3.</font>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
 
 </body>
 
